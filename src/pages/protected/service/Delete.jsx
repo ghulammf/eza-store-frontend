@@ -15,6 +15,7 @@ const Delete = () => {
       const response = await ServiceService.delete(serviceId);
       clearServiceId();
       hideModalDelete();
+      location.reload();
       toast.success(response.message);
     } catch (error) {
       toast.error(error.response.data.message);

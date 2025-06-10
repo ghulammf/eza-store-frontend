@@ -41,6 +41,7 @@ const Create = () => {
       const response = await ProdukService.create(formData);
       hideModalCreate();
       clearData();
+      location.reload();
       toast.success(response.message);
     } catch (error) {
       toast.error(error.response.data.message);

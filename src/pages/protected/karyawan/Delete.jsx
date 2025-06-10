@@ -14,6 +14,7 @@ const Delete = () => {
     try {
       const response = await KaryawanService.delete(userDelete);
       hideModalDelete();
+      location.reload();
       toast.success(response.message);
     } catch (error) {
       toast.error(error.response.data.message);

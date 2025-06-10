@@ -57,6 +57,7 @@ const Update = () => {
       clearData();
       clearProdukId();
       hideModalUpdate();
+      location.reload();
       toast.success(response.message);
     } catch (error) {
       toast.error(error.response.data.message);

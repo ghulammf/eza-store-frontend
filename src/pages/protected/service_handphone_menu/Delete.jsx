@@ -19,6 +19,7 @@ const Delete = () => {
       const response = await ServiceHandponeMenuServices.delete(serviceMenuId);
       clearServiceMenuId();
       hideModalDelete();
+      location.reload();
       toast.success(response.message);
     } catch (error) {
       toast.error(error.response.data.message);
