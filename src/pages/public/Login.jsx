@@ -33,14 +33,14 @@ function Login() {
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form onSubmit={handleLogin} className="space-y-6">
           <InputAuth
-            label={"username (admin)"}
+            label={"username"}
             icon={UserIcon}
             type={"text"}
             value={username}
             onChange={(e) => setUsername(e.target.value)}
           />
           <InputPassword
-            label={"password (admin)"}
+            label={"password"}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
